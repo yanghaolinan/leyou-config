@@ -7,11 +7,16 @@ spring:
     virtual-host: /leyou
     username: /leyou
     password: leyou
-    host: 192.168.19.121
+    host: 192.169.88.130
 
 leyou:
   sms:
-    accessKeyId: LTAIc259TULYzaS7
-    accessKeySecret: 1uh79I1UAmwQ4YWsSmOgxw7JEBGA0v
-    signName: 乐优商城
-    verifyCodeTemplate: SMS_148614415
+    accessKeyId: LTAI4FyeMnZSTdLrxv2vZye6 # 你自己的accessKeyId
+    accessKeySecret: 4zXXV5xI5VZ7yKWWFtW2UcS91LP4v6 # 你自己的AccessKeySecret
+    signName: ABC商城 # 签名名称
+    verifyCodeTemplate: SMS_206470004 # 模板名称
+    #accessKeyId: LTAIc259TULYzaS7
+    #accessKeySecret: 1uh79I1UAmwQ4YWsSmOgxw7JEBGA0v
+    #signName: 乐优商城
+    #verifyCodeTemplate: SMS_148614415
+

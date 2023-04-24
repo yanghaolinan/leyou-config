@@ -7,7 +7,7 @@ spring:
     virtual-host: /leyou
     username: /leyou
     password: leyou
-    host: 192.168.19.121
+    host: 192.169.88.130
 eureka:
   client:
     service-url:
@@ -21,12 +21,18 @@ eureka:
     lease-renewal-interval-in-seconds: 5 #每隔5秒发一次心跳
 leyou:
   jwt:
+    #secret: leyou@Login(Auth}*^31)&heiMa% # 登录校验的密钥
+    #pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
+    #priKeyPath: G:\\tmp\\rsa\\rsa.pri # 私钥地址
+    #expire: 30 # 过期时间,单位分钟
+    #cookieName: LY_TOKEN
+    #cookieMaxAge: 30
     secret: leyou@Login(Auth}*^31)&heiMa% # 登录校验的密钥
-    pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
-    priKeyPath: G:\\tmp\\rsa\\rsa.pri # 私钥地址
-    expire: 30 # 过期时间,单位分钟
-    cookieName: LY_TOKEN
-    cookieMaxAge: 30
+      pubKeyPath: E:\\rsa\\rsa.pub # 公钥地址
+      priKeyPath: E:\\rsa\\rsa.pri # 私钥地址
+      expire: 30 # 过期时间,单位分钟
+      cookieName: LY_TOKEN
+
 
 ribbon:
   ConnectTimeout: 4000 # 连接超时时间(ms)

@@ -7,7 +7,7 @@ spring:
     virtual-host: /leyou
     username: /leyou
     password: leyou
-    host: 192.168.19.121
+    host: 192.169.88.130
 eureka:
   client:
     service-url:
@@ -49,8 +49,10 @@ hystrix:
             timeoutInMillisecond: 10000 # 熔断超时时长：10000ms
 leyou:
   jwt:
+    #cookieName: LY_TOKEN
+    #pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
+    pubKeyPath: E:\\rsa\\rsa.pub # 公钥地址
     cookieName: LY_TOKEN
-    pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
   filter:
     allowPaths:
        /api/auth
